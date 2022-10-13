@@ -1,8 +1,14 @@
 import { supabase } from "../utils/supabase";
 import Link from "next/link";
 
+// Tutorial homepage: https://egghead.io/courses/build-a-saas-product-with-next-js-supabase-and-stripe-61f2bc20
+
 export default function Home({ lessons }) {
-  console.log(lessons);
+  // console.log(lessons);
+  // GitHub authentication doesn't work, keeps returning page not found
+  // For this reason the authentication part was not completed => https://egghead.io/lessons/supabase-implement-third-party-authentication-with-github-in-next-js-using-supabase
+  // console.log(supabase.auth.user());
+
   return (
     <div className="w-full max-w-3xl mx-auto my-16 px-2">
       {lessons.map((lesson) => (

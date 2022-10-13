@@ -1,7 +1,7 @@
 import { supabase } from "../utils/supabase";
 
 const LessonsDetails = ({ lesson }) => {
-  console.log({ lesson });
+  //   console.log({ lesson });
 
   return (
     <div className="w-full max-w-3xl mx-auto py-16 px-8">
